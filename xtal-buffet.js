@@ -5,7 +5,11 @@ import { mergeDeep } from 'trans-render/mergeDeep.js';
 import { domMerge } from 'trans-render/domMerge.js';
 import { init } from 'trans-render/init.js';
 import { update } from 'trans-render/update.js';
+import { interpolate } from 'trans-render/interpolate.js';
+import { repeat } from 'trans-render/repeat.js';
+import { replaceTargetWithTemplate } from 'trans-render/replaceTarget.js';
 import 'trans-render/trans-render';
+import { insertAdjacentTemplate } from 'trans-render/insertAdjacentTemplate.js';
 import { XtallatX, incAttr } from 'xtal-element/xtal-latx.js';
 import { attachScriptFn } from 'xtal-element/attachScriptFn.js';
 //import {BaseLinkId, baseLinkId} from 'xtal-element/base-link-id.js'
@@ -14,6 +18,8 @@ import { DataDecorators } from 'xtal-element/data-decorators.js';
 import { debounce } from 'xtal-element/debounce.js';
 import { destruct, getScript } from 'xtal-element/destruct.js';
 import { getHost } from 'xtal-element/getHost.js';
+import { observeCssSelector } from 'xtal-element/observeCssSelector.js';
+import { newRenderContext, createTemplate } from 'xtal-element/utils.js';
 export class XtalBuffet extends HTMLElement {
 }
 XtalBuffet.disabled = disabled;
@@ -36,3 +42,11 @@ XtalBuffet.mergeDeep = mergeDeep;
 XtalBuffet.domMerge = domMerge;
 XtalBuffet.init = init;
 XtalBuffet.update = update;
+//3.6 kb
+XtalBuffet.insertAdjacentTemplate = insertAdjacentTemplate;
+XtalBuffet.interpolate = interpolate;
+XtalBuffet.repeat = repeat;
+XtalBuffet.replaceTarget = replaceTargetWithTemplate;
+XtalBuffet.observeCssSelector = observeCssSelector;
+XtalBuffet.newRenderContext = newRenderContext;
+XtalBuffet.createTemplate = createTemplate;
