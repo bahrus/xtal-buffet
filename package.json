@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "TBD",
   "main": "xtal-buffet.js",
+  "module": "xtal-buffet.js",
   "dependencies": {
     "event-switch": "0.0.12",
     "xtal-element": "0.0.58",
