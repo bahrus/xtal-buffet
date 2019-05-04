@@ -6,6 +6,8 @@ import {attachScriptFn} from 'xtal-element/attachScriptFn.js';
 import {createNestedProp} from 'xtal-element/createNestedProp.js';
 import {DataDecorators} from 'xtal-element/data-decorators.js';
 import {debounce} from 'xtal-element/debounce.js';
+import {destruct, getScript} from 'xtal-element/destruct.js';
+import {getHost} from 'xtal-element/getHost.js';
 
 export class XtalBuffet extends HTMLElement{
     static disabled = disabled;
@@ -14,7 +16,11 @@ export class XtalBuffet extends HTMLElement{
     static XtallatX = XtallatX;
     static incAttr = incAttr;
     static attachScriptFn = attachScriptFn;
+    //3kb
     static createdNestedProp = createNestedProp;
     static DataDecorators = DataDecorators;
     static debounce = debounce;
+    static destruct = destruct;
+    static getScript = getScript;
+    static getHost = getHost;
 }
