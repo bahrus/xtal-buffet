@@ -14,5 +14,7 @@ export class XtalBuffet extends HTMLElement{
     static XtallatX = XtallatX;
     static incAttr = incAttr;
     static attachScriptFn = attachScriptFn;
-
+    static createdNestedProp = createNestedProp;
+    static DataDecorators = DataDecorators;
+    static debounce = debounce;
 }
