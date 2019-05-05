@@ -12,7 +12,7 @@ import 'trans-render/trans-render';
 import { insertAdjacentTemplate } from 'trans-render/insertAdjacentTemplate.js';
 import { XtallatX, incAttr } from 'xtal-element/xtal-latx.js';
 import { attachScriptFn } from 'xtal-element/attachScriptFn.js';
-//import {BaseLinkId, baseLinkId} from 'xtal-element/base-link-id.js'
+import { BaseLinkId, baseLinkId } from 'xtal-element/base-link-id.js';
 import { createNestedProp } from 'xtal-element/createNestedProp.js';
 import { DataDecorators } from 'xtal-element/data-decorators.js';
 import { debounce } from 'xtal-element/debounce.js';
@@ -20,6 +20,9 @@ import { destruct, getScript } from 'xtal-element/destruct.js';
 import { getHost } from 'xtal-element/getHost.js';
 import { observeCssSelector } from 'xtal-element/observeCssSelector.js';
 import { newRenderContext, createTemplate } from 'xtal-element/utils.js';
+import { refract } from 'xtal-element/refract.js';
+import { NavDown } from 'xtal-element/NavDown.js';
+import { WithPath, with_path } from 'xtal-element/with-path.js';
 export class XtalBuffet extends HTMLElement {
 }
 XtalBuffet.disabled = disabled;
@@ -50,3 +53,10 @@ XtalBuffet.replaceTarget = replaceTargetWithTemplate;
 XtalBuffet.observeCssSelector = observeCssSelector;
 XtalBuffet.newRenderContext = newRenderContext;
 XtalBuffet.createTemplate = createTemplate;
+//4 kb
+XtalBuffet.BaseLinkId = BaseLinkId;
+XtalBuffet.baseLinkId = baseLinkId;
+XtalBuffet.refract = refract;
+XtalBuffet.NavDown = NavDown;
+XtalBuffet.WithPath = WithPath;
+XtalBuffet.with_path = with_path;
