@@ -2,8 +2,8 @@
   "name": "xtal-buffet",
   "version": "0.0.9",
   "description": "TBD",
-  "main": "xtal-buffet.js",
-  "module": "xtal-buffet.js",
+  "main": "index.js",
+  "module": "index.js",
   "dependencies": {
     "event-switch": "0.0.12",
     "xtal-element": "0.0.58",
