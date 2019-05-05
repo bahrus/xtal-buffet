@@ -23,6 +23,8 @@ import {newRenderContext, createTemplate} from 'xtal-element/utils.js';
 import {refract} from 'xtal-element/refract.js';
 import {NavDown} from 'xtal-element/NavDown.js';
 import {WithPath, with_path} from 'xtal-element/with-path.js';
+import {addEventListeners, newEventContext} from 'event-switch/event-switch.js';
+import {XtalElement} from 'xtal-element/xtal-element.js';
 
 export class XtalBuffet extends HTMLElement{
     static disabled = disabled;
@@ -60,4 +62,8 @@ export class XtalBuffet extends HTMLElement{
     static NavDown = NavDown;
     static WithPath = WithPath;
     static with_path = with_path;
+    //4.8 kb
+    static addEventListeners = addEventListeners;
+    static newEventContext = newEventContext;
+    static XtalElement = XtalElement;
 }
