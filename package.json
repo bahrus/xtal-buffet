@@ -1,6 +1,6 @@
 {
   "name": "xtal-buffet",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "pikaweb combo",
   "main": "xtal-buffet.js",
   "module": "xtal-buffet.js",
