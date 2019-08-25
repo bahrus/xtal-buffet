@@ -5,8 +5,9 @@
   "main": "xtal-buffet.js",
   "module": "xtal-buffet.js",
   "dependencies": {
-    "p-et-alia": "0.0.22",
-    "if-diff": "0.0.35"
+    "p-et-alia": "0.0.42",
+    "if-diff": "0.0.35",
+    "xtal-state": "0.0.98"
   },
   "devDependencies": {
     "jiife": "0.0.12"
